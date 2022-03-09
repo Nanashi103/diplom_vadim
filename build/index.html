@@ -8,35 +8,109 @@
   <link rel="stylesheet" href="./assets/css/app.css">
 </head>
 <body>
-  <!--mixin card(title, text, img) 
-  .card
-      img.card__img(src=img, alt=title)
-      h3.card__title=title
-      p.card__text=text
-  -->
-  <section>
-    <div class="container">
-      <div class="features">
-        <p class="features__subtitle">Features</p>
-        <h2 class="features__title">Food with a New Passion</h2>
-        <div class="features__row">
-          <!--+card("Quality Food", 'It can be a very secure path to earn good money and make you very successful creative entrepreneur.', src='./assets/imgs/card1.svg' )-->
-          <!--+card("Food Delivery", "It can be a very secure path to earn good money and make you very successful creative entrepreneur.", src="./assets/imgs/card2.svg")-->
-          <!--+card("Super Taste","It can be a very secure path to earn good money and make you very successful creative entrepreneur.",src='./assets/imgs/card3.svg' )-->
-            <div class="card"><img class="card__img" src="./assets/imgs/card1.svg" alt="Quality Food">
-              <h3 class="card__title">Quality Food</h3>
-              <p class="card__text">It can be a very secure path to earn good money and make you very successful creative entrepreneur.</p>
-            </div>
-            <div class="card"><img class="card__img" src="./assets/imgs/card2.svg" alt="Food Delivery">
-              <h3 class="card__title">Food Delivery</h3>
-              <p class="card__text">It can be a very secure path to earn good money and make you very successful creative entrepreneur.</p>
-            </div>
-            <div class="card"><img class="card__img" src="./assets/imgs/card3.svg" alt="Super Taste">
-              <h3 class="card__title">Super Taste</h3>
-              <p class="card__text">It can be a very secure path to earn good money and make you very successful creative entrepreneur.</p>
-            </div>
+  <div class="container">
+    <!--js ..-->
+    <label class="burger" for="burger"><span class="burger__menu">=           </span></label>
+    <section class="locus">
+      <header class="header"><a class="header__logo" href="index.html">  <img src="./assets/imgs/home.jpg" alt="#">
+          <p class="header__name">Locus</p></a>
+        <nav class="header__nav">
+          <ul class="nav__menu">
+            <li><a class="menu__list" href="#">Home</a></li>
+            <li><a class="menu__list" href="#">Contact</a></li>
+            <li><a class="menu__list" href="#">Location</a></li>
+            <li><a class="menu__list" href="#">About Us</a></li>
+          </ul>
+        </nav>
+        <button class="btn">Sign Up</button>
+      </header>
+      <div class="locus__content">
+        <div class="locus__text">    
+          <h1 class="locus__title">Get the inspiration of interior design here</h1>
+          <p class="locus__description">architecture not only about engineering, it even lands to art and aesthetics. With us, you will get a residentical design with an extraordinary touch of art.</p>
+          <button class="btn btn--radius">Let’s go</button>
+        </div>
+        <div class="locus__imgs"><img class="locus__img" src="./assets/imgs/office2.png" alt="#office"></div>
+      </div>
+    </section>
+    <section class="works">
+      <div class="works__inner">
+        <h2 class="works__title">How it works</h2>
+        <p class="works__text">Spice up your space even simpler than you think </p>
+      </div>
+      <div class="works__row">
+        <div class="row__block"><img class="block__img" src="./assets/imgs/row-img.jpg" alt="#row-img"></div>
+        <div class="block__text">
+          <p class="block__description">We provide design and build for commercial building, interior and furniture to improve the better life.  </p>
+          <p class="block__video">S E E  V I D E O</p><img class="block__player" src="./assets/imgs/player.jpg" alt="#player">
         </div>
       </div>
-    </div>
-  </section>
+      <div class="works__room">
+        <div class="room__img"><img class="room__picture" src="./assets/imgs/room.jpg" alt="#room"></div>
+        <div class="room__text">
+          <h2 class="room__title">Our mission is to deliver aesthetic visual for your home</h2>
+          <p class="room__description">By applying bacis psychology principles, we are going to explain how perception works and how we can use this understanding to maximise the space that we occupy in our homes.</p>
+        </div>
+      </div>
+    </section>
+    <section class="project">
+      <div class="project__iner">
+        <h2 class="project__title works__title">Our project </h2>
+        <p class="project__text works__text">Introducing our first official project
+          <div class="project__border"></div>
+          <div class="project__border"></div>
+        </p>
+      </div>
+      <div class="project__item">  
+        <div class="project__column">   
+          <h3 class="column__title">Project Livingroom</h3>
+          <p class="column__text">It can be a very secure path to earn good money and make you very successful creative entrepreneur.</p><img class="column__img" src="./assets/imgs/item1.jpg" alt="Project Livingroom"/>
+        </div>
+        <div class="project__column"><img class="column__img" src="./assets/imgs/item2.jpg" alt="Project Livingroom"/>
+          <h3 class="column__title column__title--margin">Project Livingroom</h3>
+          <p class="column__text column__text--margin">It can be a very secure path to earn good money and make you very successful creative entrepreneur.</p>
+        </div>
+        <div class="project__column">   
+          <h3 class="column__title">Project Livingroom</h3>
+          <p class="column__text">It can be a very secure path to earn good money and make you very successful creative entrepreneur.</p><img class="column__img" src="./assets/imgs/item3.jpg" alt="Project Livingroom"/>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial">
+      <h2 class="testimonial__title works__title">Testimonial</h2>
+      <div class="testimonial__mark"><img class="mark1" src="./assets/imgs/image1.jpg" alt="#image1"><img class="mark2" src="./assets/imgs/image2.jpg" alt="#image2"><img class="mark3" src="./assets/imgs/image3.jpg" alt="#image3"><img class="mark4" src="./assets/imgs/image4.jpg" alt="#image4"></div>
+      <div class="testimonial__row">
+        <div class="testimonial__iner"><img class="testimonial__img" src="./assets/imgs/bottom.jpg" alt="#row-img"></div>
+        <div class="iner__content">
+          <div class="iner__column">
+            <p class="content__text">105 <span class="content__text--left">project done  </span></p>
+            <p class="content__text">12 <span class="content__text--middle">years of experience</span></p>
+            <p class="content__text">10+ <span class="content__text--right">big company partnership</span></p>
+          </div>
+          <div class="iner__row"> 
+            <p>"Not able to tell you how happy I am with interior design. Interior design has completely surpassed our expectations. Interior design saved my business. Interior design is worth much more than I paid."</p>
+            <p class="iner__row--bottom">- Roscoe</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__form">
+        <div class="footer__text">
+          <h2 class="form__title works__title">Contact Us</h2>
+          <p class="form__text works__text">Have any questions? Want help before getting started?</p>
+          <div class="project__border"></div>
+          <div class="project__border"></div>
+        </div>
+        <div class="form__table">
+          <form action="#" method="post"> 
+            <input class="form__input" type="text" placeholder="Full name">
+            <input class="form__input" type="text" placeholder="Email address">
+            <input class="form__input form__input--padding" type="text" placeholder="Description">
+            <button class="btn form__btn">Send now</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>

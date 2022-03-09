@@ -1,0 +1,15 @@
+
+mixin column__item(args={ })
+    .project__column    
+        h3.column__title=args.title
+        p.column__text=args.text   
+        img.column__img(src=args.img, alt=args.title)
+
+mixin column__item--calc(args={ })
+    .project__column
+        img.column__img(src=args.img, alt=args.title)    
+        h3.column__title.column__title--margin=args.title
+        p.column__text.column__text--margin=args.text   
+    
+       
+           

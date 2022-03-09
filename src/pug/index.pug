@@ -1,3 +1,4 @@
+include ./components/locus
 doctype html
 html
 head
@@ -7,4 +8,104 @@ head
   title Document
   link(rel='stylesheet' href='./assets/css/app.css')
 body
-    include ./components/features.pug
+    .container
+      //js ..
+      label.burger(for="burger")
+        span.burger__menu =           
+      section.locus
+          header.header
+            a(href="index.html").header__logo   
+              img(src="./assets/imgs/home.jpg", alt="#")
+              p.header__name Locus
+            nav.header__nav
+              ul.nav__menu
+                li
+                  a.menu__list(href="#") Home
+                li
+                  a.menu__list(href="#") Contact
+                li
+                  a.menu__list(href="#") Location
+                li
+                  a.menu__list(href="#") About Us
+            button.btn Sign Up
+          .locus__content
+            .locus__text     
+              h1.locus__title Get the inspiration of interior design here
+              p.locus__description architecture not only about engineering, it even lands to art and aesthetics. With us, you will get a residentical design with an extraordinary touch of art.
+              button.btn.btn--radius Let’s go
+            .locus__imgs
+              img(src="./assets/imgs/office2.png", alt="#office").locus__img
+      section.works
+        .works__inner
+          h2.works__title How it works
+          p.works__text Spice up your space even simpler than you think 
+        .works__row
+          .row__block
+            img.block__img(src="./assets/imgs/row-img.jpg", alt="#row-img")
+          .block__text
+            p.block__description We provide design and build for commercial building, interior and furniture to improve the better life.  
+            p.block__video S E E  V I D E O
+            img(src="./assets/imgs/player.jpg", alt="#player").block__player
+        .works__room
+          .room__img
+            img(src="./assets/imgs/room.jpg", alt="#room").room__picture
+          .room__text
+            h2.room__title Our mission is to deliver aesthetic visual for your home
+            p.room__description By applying bacis psychology principles, we are going to explain how perception works and how we can use this understanding to maximise the space that we occupy in our homes.
+      section.project
+        .project__iner
+          h2.project__title.works__title Our project 
+          p.project__text.works__text Introducing our first official project
+            .project__border
+            .project__border
+        .project__item   
+          +column__item({
+                  title:"Project Livingroom",
+                  text:"It can be a very secure path to earn good money and make you very successful creative entrepreneur.",
+                  img:'./assets/imgs/item1.jpg', 
+              })
+          +column__item--calc({
+                  img:'./assets/imgs/item2.jpg', 
+                  title:"Project Livingroom",
+                  text:"It can be a very secure path to earn good money and make you very successful creative entrepreneur.",
+                  
+              })
+          +column__item({
+                  title:"Project Livingroom",
+                  text:"It can be a very secure path to earn good money and make you very successful creative entrepreneur.",
+                  img:'./assets/imgs/item3.jpg', 
+              })
+      section.testimonial
+        h2.testimonial__title.works__title Testimonial
+        .testimonial__mark
+          img(src="./assets/imgs/image1.jpg", alt="#image1").mark1       
+          img(src="./assets/imgs/image2.jpg", alt="#image2").mark2       
+          img(src="./assets/imgs/image3.jpg", alt="#image3").mark3       
+          img(src="./assets/imgs/image4.jpg", alt="#image4").mark4
+        .testimonial__row
+          .testimonial__iner
+            img.testimonial__img(src="./assets/imgs/bottom.jpg", alt="#row-img")
+          .iner__content
+            .iner__column
+                p.content__text 105 
+                  span.content__text--left project done  
+                p.content__text 12 
+                  span.content__text--middle years of experience
+                p.content__text 10+ 
+                  span.content__text--right big company partnership
+            .iner__row 
+                p "Not able to tell you how happy I am with interior design. Interior design has completely surpassed our expectations. Interior design saved my business. Interior design is worth much more than I paid."
+                p.iner__row--bottom - Roscoe
+      footer.footer
+        .footer__form
+          .footer__text
+            h2.form__title.works__title Contact Us
+            p.form__text.works__text Have any questions? Want help before getting started?
+            .project__border
+            .project__border
+          .form__table
+            form(action="#", method="post") 
+              input(type="text" placeholder="Full name").form__input
+              input(type="text" placeholder="Email address").form__input
+              input(type="text" placeholder="Description").form__input.form__input--padding
+              button.btn.form__btn Send now
